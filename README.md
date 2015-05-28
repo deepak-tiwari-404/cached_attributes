@@ -21,8 +21,12 @@ Or install it yourself as:
     $ gem install cached_attributes
 
 ## Usage
+e.g
 
-TODO: Write usage instructions here
+class User < ActiveRecord::Base
+  include CachedAttributes
+  cached_attributes :name, :email
+end
 
 ## Development
 
